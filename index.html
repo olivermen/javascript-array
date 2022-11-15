@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="text/JavaScript" src="array.js"></script>
   </head>
 
   <body>
     <div class="container">
       <div class="random_array">
-        <h1>Random Array</h1>
+        <h1>Random Array<span id="array-size"> (0) </span></h1>
         <textarea class="my_textarea" id="random-array" readonly> Random Values </textarea>
       </div>
       <div class="result">
@@ -29,7 +28,8 @@
           <input class="my_input" id="min-value" type="text" readonly />
         </div>
       </div>
-      <button class="btn_try">Generate</button>
+      <button class="btn_try" onclick="generate()">Generate</button>
     </div>
   </body>
+  <script type="text/javascript" src="array.js"></script>
 </html>
