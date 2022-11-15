@@ -1,0 +1,104 @@
+$main-bg : rgb(220, 241, 240);
+$main-font-color : rgb(12, 43, 42);
+$disable-font-color : rgb(49, 106, 104);
+$btn-color:  rgb(208, 48, 54);
+$btn-hover-color:  rgb(221, 78, 83);
+$btn-active-color:  rgb(131, 45, 47);
+$btn-font-color: rgb(238, 231, 231);
+$width-3 : 33.3%;
+$default-padding: 0 20px;
+$relative-position: relative;
+$justify-center : center;
+$align-center : center;
+$text-center : center;
+$flex-column : column;
+$default-font : "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$font-size : 20px;
+$result-font-size : 30px;
+$padding-input : 20px 10px;
+$btn-padding : 20px 50px;
+$result-input-width: 150px;
+$result-input-height: 50px;
+
+body {
+  background-color: $main-bg;
+  color: $main-font-color;
+  font-family: $default-font;
+  font-size: $font-size;
+} 
+
+.container {
+  display: flex;
+  justify-content: $justify-center;
+  align-items: $align-center;
+  flex-direction: $flex-column;
+}
+
+.random_array {
+  text-align: $text-center;
+}
+
+.result { 
+  margin-top: 40px;
+  display: flex;
+  justify-content: $justify-center;
+  align-items: $align-center;
+}
+
+.my_textarea {
+  font-size: $font-size;
+}
+
+.my_input {
+  font-size: $result-font-size;
+  width: $result_input_width;
+  height: $result_input_height;
+  text-align: $align-center;
+}
+
+#random-array {
+  padding: $padding-input;
+  width: 800px;
+  height: 200px;
+  color : $disable-font-color;
+}
+
+.sum_array {
+  position: $relative-position;
+  width: $width-3;
+  padding: $default-padding;
+  text-align: $text-center;
+}
+
+.max_value {
+  position: $relative-position;
+  width: $width-3;
+  padding: $default-padding;
+  text-align: $text-center;
+}
+
+.min_value {
+  position: $relative-position;
+  width: $width-3;
+  padding: $default-padding;
+  text-align: $text-center;
+}
+
+.btn_try {
+  padding: $btn-padding;
+  background-color: $btn-color;
+  color: $btn-font-color;
+  font-size: $font-size;
+  border: none;
+  margin: 20px auto;
+  font-weight: bold;
+  width: 300px;
+}
+
+.btn_try:hover {
+  background-color: $btn-hover-color;
+}
+
+.btn_try:active {
+  background-color: $btn-active-color;
+}
